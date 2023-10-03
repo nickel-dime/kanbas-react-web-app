@@ -1,118 +1,178 @@
-<body>
-  <table width="100%">
-    <td valign="top">
-      <ul>
-        <li><a href="profile/index.html">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#">Modules</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Zoom Meetings</a></li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="assignments/index.html">Assignments</a></li>
-        <li><a href="grades.html">Grades</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Panopto Video</a></li>
-        <li><a href="#">Discussions</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Rubrics</a></li>
-        <li><a href="#">Outcomes</a></li>
-        <li><a href="#">Collaborations</a></li>
-        <li><a href="#">Syllabus</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <select>
-        <option>Gradebook</option>
-      </select>
-      <button>Import</button>
-      <select>
-        <option>Export</option>
-      </select>
-      <button>Configure</button>
-      <h3>Student Names</h3>
-      <input
-        id="grades-student-search"
-        placeholder="Search Students"
-        type="text"
-        title="Type the name of a student you want to search"
-      /><br />
-      <h3>Assignment Names</h3>
-      <input
-        id="grades-assignment-search"
-        placeholder="Search Assignments"
-        type="text"
-        title="Type the name of a assignment you want to search"
-      /><br />
-      <br />
-      <button>Apply Filters</button>
-      <br />
-      <br />
-      <table width="100%" border="1">
-        <thead>
-          <tr>
-            <th>Student Name</th>
-            <th>A1 - HTML</th>
-            <th>A2 - TS</th>
-            <th>A3 - JS</th>
-            <th>A4 - React</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nikhil Goel</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Bob Bobertson</td>
-            <td>100</td>
-            <td>
-              <input id="student-search" value="92" />
-            </td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>John Smith</td>
-            <td>43</td>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/kanbas/navigation/index.css" />
+        <link rel="stylesheet" href="/kanbas/courses/navigation/index.css" />
+        <link
+            rel="stylesheet"
+            href="/vendors/font-awesome/css/font-awesome.css"
+        />
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black d-none d-md-block">
+                <div>
+                    <ul class="wd-kanbas-navigation">
+                        <li>
+                            <a href="profile/index.html"
+                                ><i
+                                    class="fa fa-user-circle"
+                                    style="color: white"
+                                ></i
+                                >Account</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-tachometer"></i>
+                                Dashboard</a
+                            >
+                        </li>
+                        <li class="wd-active">
+                            <a href="#"><i class="fa fa-book"></i>Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                Calendar</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-inbox"></i><br />Inbox</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-history"></i><br />History</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tv"></i><br />Studio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-external-link"></i>Commons</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-question-circle"></i
+                                ><br />Help</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul class="wd-course-navigation">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li class="">
+                        <a href="assignments/index.html">Assignments</a>
+                    </li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li class="wd-active">
+                        <a href="grades.html">Grades</a>
+                    </li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
 
-            <td>78</td>
-            <td>
-              <input id="student-search" value="22" />
-            </td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>Teacher</td>
-            <td>85</td>
-            <td>
-              <input id="student-search" value="84" />
-            </td>
-            <td>83</td>
-            <td>
-              <input id="student-search" value="82" />
-            </td>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
-      </table>
-    </td>
-  </table>
-</body>
+            <div valign="top">
+                <select>
+                    <option>Gradebook</option>
+                </select>
+                <button>Import</button>
+                <select>
+                    <option>Export</option>
+                </select>
+                <button>Configure</button>
+                <h3>Student Names</h3>
+                <input
+                    id="grades-student-search"
+                    placeholder="Search Students"
+                    type="text"
+                    title="Type the name of a student you want to search"
+                /><br />
+                <h3>Assignment Names</h3>
+                <input
+                    id="grades-assignment-search"
+                    placeholder="Search Assignments"
+                    type="text"
+                    title="Type the name of a assignment you want to search"
+                /><br />
+                <br />
+                <button>Apply Filters</button>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>A1 - HTML</th>
+                                <th>A2 - TS</th>
+                                <th>A3 - JS</th>
+                                <th>A4 - React</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nikhil Goel</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bob Bobertson</td>
+                                <td>100</td>
+                                <td>
+                                    <input id="student-search" value="92" />
+                                </td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td>43</td>
+
+                                <td>78</td>
+                                <td>
+                                    <input id="student-search" value="22" />
+                                </td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Teacher</td>
+                                <td>85</td>
+                                <td>
+                                    <input id="student-search" value="84" />
+                                </td>
+                                <td>83</td>
+                                <td>
+                                    <input id="student-search" value="82" />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
