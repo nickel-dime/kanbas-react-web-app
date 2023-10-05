@@ -1,69 +1,239 @@
-<body>
-  <table width="100%">
-    <td valign="top">
-      <ul>
-        <li><a href="index.html">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="../home.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared Content</a></li>
-        <li><a href="#">The Hub</a></li>
-        <li><a href="#">Qwickly Course Tools</a></li>
-        <li><a href="#">Global Announcements</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <h1>Nikhil Goel</h1>
-      <form>
-        <label>Name:*</label>
-        <input value="Nikhil Goel" placeholder="Enter your name" />
-        <label>Pronouns:</label>
-        <select>
-          <option value="NONE">None</option></select
-        ><br />
-        <br />
-        <label>Title:</label>
-        <input />
-      </form>
-      <h3>Contact</h3>
-      No registered services you can add some on the
-      <a href="#">settings</a> page.
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/kanbas/navigation/index.css" />
+        <link rel="stylesheet" href="/kanbas/courses/navigation/index.css" />
+        <link
+            rel="stylesheet"
+            href="/vendors/font-awesome/css/font-awesome.css"
+        />
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="wd-flex-row-container" style="margin-right: 50px">
+            <div class="wd-bg-color-black d-none d-md-block">
+                <div>
+                    <ul class="wd-kanbas-navigation">
+                        <img
+                            alt="Northeastrn University Logo"
+                            style="height: 85px; width: fit-content"
+                            src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                        />
+                        <li class="wd-active">
+                            <a href="index.html"
+                                ><i
+                                    class="fa fa-user-circle"
+                                    style="color: gray"
+                                ></i
+                                >Account</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../dashboard/index.html">
+                                <i class="fa fa-tachometer"></i>
+                                Dashboard</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../home.html"
+                                ><i class="fa fa-book"></i>Courses</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                Calendar</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-inbox"></i><br />Inbox</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-history"></i><br />History</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tv"></i><br />Studio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-external-link"></i>Commons</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-question-circle"></i
+                                ><br />Help</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 100%">
+                <div class="ms-4 mt-4">
+                    <div class="d-flex flex-row">
+                        <i
+                            class="fa fa-bars fa-lg"
+                            style="color: #d41b2c; line-height: normal"
+                            aria-hidden="true"
+                        ></i>
+                        <div class="ms-4">Nikhil Goel's Profile</div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="d-flex d-row">
+                    <div class="d-none d-md-block">
+                        <ul class="wd-course-navigation">
+                            <li><a href="#">Notifications</a></li>
+                            <li class="wd-active">
+                                <a href="index.html">Profile</a>
+                            </li>
+                            <li><a href="#">Files</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">ePortfolios</a></li>
+                            <li><a href="#">Shared Content</a></li>
+                            <li><a href="#">The Hub</a></li>
+                            <li><a href="#">Qwickly Course Tools</a></li>
+                            <li><a href="#">Global Announcements</a></li>
+                        </ul>
+                    </div>
 
-      <h2>Biography</h2>
-      Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-      <br />
-      <textarea cols="50" rows="3">
+                    <div class="wd-flex-grow-1">
+                        <a class="float-end" href="index.html"
+                            ><button class="btn btn-light border-1 me-4">
+                                <svg
+                                    aria-hidden="true"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    version="1.1"
+                                    width="16"
+                                    data-view-component="true"
+                                    class="octicon octicon-pencil"
+                                >
+                                    <path
+                                        d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"
+                                    ></path>
+                                </svg>
+                                Cancel Editing
+                            </button></a
+                        >
+                        <br />
+                        <div class="d-flex flex-column ms-4">
+                            <i class="fa fa-5x fa-user" aria-hidden="true"></i>
+                            <div class="d-flex flex-column">
+                                <label style="font-weight: bold" class="mt-2"
+                                    >Name:</label
+                                >
+                                <input
+                                    class="form-control"
+                                    value="Nikhil Goel"
+                                    placeholder="Enter your name"
+                                />
+                                <label style="font-weight: bold" class="mt-2"
+                                    >Pronouns:</label
+                                >
+                                <select class="form-control">
+                                    <option value="NONE">None</option>
+                                </select>
+
+                                <label style="font-weight: bold" class="mt-2"
+                                    >Title:</label
+                                >
+                                <input class="form-control" />
+                                <h3 class="mt-4">Contact</h3>
+                                <div>
+                                    No registered services you can add some on
+                                    the
+                                    <a
+                                        href="#"
+                                        style="
+                                            color: red;
+                                            text-decoration: none;
+                                        "
+                                        >settings</a
+                                    >
+                                    page.
+                                </div>
+
+                                <h3 class="mt-4">Biography</h3>
+
+                                <textarea
+                                    class="form-control"
+                                    cols="50"
+                                    rows="3"
+                                >
 Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea
-      >
-      <h2>Links</h2>
-      <li>
-        <a href="#" style="text-decoration: none">YouTube</a>
-      </li>
-      <h4>
-        &emsp;&emsp;&emsp; Title
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;URL
-      </h4>
-      <input value="YouTube" /> → <input value="https:://wwww.youtube.com" />
-      <a href="#">Remove</a> <br />
-      <button>Add another link</button> <br />
-      <button>Cancel</button>
-      <a href="index.html"><button>Save Profile</button></a> <br />
-      <button>Edit Profile</button>
-      <a href="index.html"><button>Cancel Editing</button></a><br />
-    </td>
-  </table>
-</body>
+                                >
+                                <h2 class="mt-4">Links</h2>
+                                <div>
+                                    <div class="d-flex flex-row">
+                                        <div
+                                            class="d-flex flex-column text-center"
+                                        >
+                                            <div style="font-weight: bold">
+                                                Title
+                                            </div>
+                                            <input value="YouTube" />
+                                        </div>
+                                        <div
+                                            style="
+                                                margin-top: 25px;
+                                                margin-left: 2px;
+                                                margin-right: 2px;
+                                            "
+                                        >
+                                            →
+                                        </div>
+                                        <div
+                                            class="d-flex flex-column text-center"
+                                        >
+                                            <div style="font-weight: bold">
+                                                URL
+                                            </div>
+                                            <input
+                                                value="https://youtube.com"
+                                            />
+                                        </div>
+                                        <i
+                                            class="fa fa-times"
+                                            style="
+                                                color: red;
+                                                margin-top: 30px;
+                                                margin-left: 8px;
+                                            "
+                                            aria-hidden="true"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <button
+                                    style="width: 30%; font-size: medium"
+                                    class="mt-2 btn btn-light"
+                                >
+                                    Add another link
+                                </button>
+                                <div
+                                    class="d-flex flex-row gap-3"
+                                    style="justify-content: flex-end"
+                                >
+                                    <a href="index.html"
+                                        ><button class="btn btn-light">
+                                            Cancel
+                                        </button></a
+                                    >
+                                    <a href="index.html"
+                                        ><button class="btn btn-danger">
+                                            Save Profile
+                                        </button></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,169 +1,578 @@
-<body>
-  <table width="100%">
-    <td valign="top">
-      <ul>
-        <li><a href="../profile/index.html">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="../home.html">Home</a></li>
-        <li><a href="#">Modules</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Zoom Meetings</a></li>
-        <li><a href="index.html">Assignments</a></li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="../grades.html">Grades</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Panopto Video</a></li>
-        <li><a href="#">Discussions</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Rubrics</a></li>
-        <li><a href="#">Outcomes</a></li>
-        <li><a href="#">Collaborations</a></li>
-        <li><a href="#">Syllabus</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </td>
-    <td valign="top" style="width: max-content">
-      <input
-        id="assignment-search"
-        placeholder="Search for Assignments"
-        type="text"
-        title="Type the name of an assignment you want to search"
-      />
-      <button>Group</button>
-      <button>Assignment</button>
-      <select>
-        <option>Edit Assignment Dates</option>
-      </select>
-      <hr />
-      <h3>
-        ASSIGNMENTS 40% of Total
-        <select>
-          <option>Edit</option>
-          <option>Speed Grader</option>
-          <option>Duplicate</option>
-          <option>Delete</option>
-          <option>Move To...</option>
-          <option>Send To...</option>
-          <option>Copy To...</option>
-          <option>Share to Commons</option>
-        </select>
-      </h3>
-      <ul>
-        <li>
-          <a href="edit.html">A1 - Env + HTML</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="edit.html">A2 - CSS + BOOTSTRAP</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="edit.html">A3 - JS + REACT</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="edit.html">A4 - STATE + REDUX</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="edit.html">A5 - NODE + SESSION</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
-          <a href="edit.html">Multiple Modules</a> | Not available yet
-        </li>
-      </ul>
-      <h3>
-        QUIZZES 10% of Total
-        <select>
-          <option>Edit</option>
-          <option>Speed Grader</option>
-          <option>Duplicate</option>
-          <option>Delete</option>
-          <option>Move To...</option>
-          <option>Send To...</option>
-          <option>Copy To...</option>
-          <option>Share to Commons</option>
-        </select>
-      </h3>
-      <ul>
-        <li>
-          <a href="#">Q1 - HTML</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="#">Q2 - CSS</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="#">Q3 - JS, ES6</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="#">Q4 - NODE</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="#">Q5 - MONGO</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-      </ul>
-      <h3>
-        EXAMS 20% of Total
-        <select>
-          <option>Edit</option>
-          <option>Speed Grader</option>
-          <option>Duplicate</option>
-          <option>Delete</option>
-          <option>Move To...</option>
-          <option>Send To...</option>
-          <option>Copy To...</option>
-          <option>Share to Commons</option>
-        </select>
-      </h3>
-      <ul>
-        <li>
-          <a href="#">Midterm</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="#">Final</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-      </ul>
-      <h3>
-        PROJECT 30% of Total
-        <select>
-          <option>Edit</option>
-          <option>Speed Grader</option>
-          <option>Duplicate</option>
-          <option>Delete</option>
-          <option>Move To...</option>
-          <option>Send To...</option>
-          <option>Copy To...</option>
-          <option>Share to Commons</option>
-        </select>
-      </h3>
-      <ul>
-        <li>
-          <a href="#">Project</a><br />
-          <a href="#">Multiple Modules</a> | Not available yet
-        </li>
-      </ul>
-    </td>
-  </table>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/kanbas/navigation/index.css" />
+        <link rel="stylesheet" href="/kanbas/courses/navigation/index.css" />
+        <link
+            rel="stylesheet"
+            href="/vendors/font-awesome/css/font-awesome.css"
+        />
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black d-none d-md-block">
+                <div>
+                    <ul class="wd-kanbas-navigation">
+                        <img
+                            alt="Northeastrn University Logo"
+                            style="height: 85px; width: fit-content"
+                            src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                        />
+                        <li>
+                            <a href="../profile/index.html"
+                                ><i
+                                    class="fa fa-user-circle"
+                                    style="color: white"
+                                ></i
+                                >Account</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../dashboard/index.html">
+                                <i class="fa fa-tachometer"></i>
+                                Dashboard</a
+                            >
+                        </li>
+                        <li class="wd-active">
+                            <a href="index.html"
+                                ><i class="fa fa-book"></i>Courses</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                Calendar</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-inbox"></i><br />Inbox</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-history"></i><br />History</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tv"></i><br />Studio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-external-link"></i>Commons</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa fa-question-circle"></i
+                                ><br />Help</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wd-flex-grow-1">
+                <div class="ms-4 mt-4 me-3">
+                    <div
+                        class="d-flex flex-row"
+                        style="justify-content: space-between"
+                    >
+                        <div class="d-flex flex-row">
+                            <i
+                                class="fa fa-bars fa-lg"
+                                style="color: #d41b2c; line-height: normal"
+                                aria-hidden="true"
+                            ></i>
+                            <div class="ms-4">
+                                <nav
+                                    style="--bs-breadcrumb-divider: '>'"
+                                    aria-label="breadcrumb"
+                                >
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a
+                                                href="#"
+                                                style="
+                                                    color: #d41b2c;
+                                                    text-decoration: none;
+                                                "
+                                                >CS5610.11744.202310</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="breadcrumb-item active"
+                                            aria-current="page"
+                                        >
+                                            Assignments
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="float-end">
+                            <button class="btn btn-secondary btn-sm">
+                                Student View
+                            </button>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="d-flex flex-row gap-4">
+                    <div class="d-none d-md-block">
+                        <ul class="wd-course-navigation">
+                            <li>
+                                <a href="../home.html">Home</a>
+                            </li>
+                            <li><a href="#">Modules</a></li>
+                            <li><a href="#">Piazza</a></li>
+                            <li><a href="#">Zoom Meetings</a></li>
+                            <li class="wd-active">
+                                <a href="index.html">Assignments</a>
+                            </li>
+                            <li><a href="#">Quizzes</a></li>
+                            <li><a href="../grades.html">Grades</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">Microsoft Team Meetings</a></li>
+                            <li>
+                                <a href="#">FACT Reporting and Photo Roster</a>
+                            </li>
+                            <li><a href="#">Discussions</a></li>
+                            <li><a href="#">Announcements</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Files</a></li>
+                            <li><a href="#">Rubrics</a></li>
+                            <li><a href="#">Outcomes</a></li>
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex flex-column wd-flex-grow-1">
+                        <div
+                            class="d-flex flex-row gap-2 me-3"
+                            style="
+                                justify-content: space-between;
+                                font-size: smaller;
+                            "
+                        >
+                            <div>
+                                <input
+                                    id="assignment-search"
+                                    class="form-control form-control-md"
+                                    placeholder="Search for Assignment"
+                                    type="text"
+                                    title="Type the name of an assignment you want to search"
+                                />
+                            </div>
+                            <div class="d-flex flex-row gap-2">
+                                <button class="btn btn-secondary btn-sm">
+                                    <i
+                                        class="fa fa-plus"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Group
+                                </button>
+                                <button class="btn btn-danger btn-sm">
+                                    <i
+                                        class="fa fa-plus me-2"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Assignment
+                                </button>
+                                <button class="btn btn-secondary btn-sm">
+                                    <i
+                                        class="fa fa-ellipsis-v p-1"
+                                        aria-hidden="true"
+                                        style="
+                                            color: black;
+                                            line-height: normal;
+                                        "
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="me-3" />
+                        <div class="me-3">
+                            <ul class="list-group" style="border-radius: 0">
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex"
+                                    style="
+                                        font-weight: bold;
+                                        justify-content: space-between;
+                                    "
+                                >
+                                    <div
+                                        class="gap-3 d-flex"
+                                        style="align-items: center"
+                                    >
+                                        <i
+                                            class="fa fa-ellipsis-v"
+                                            aria-hidden="true"
+                                            style="color: gray"
+                                        ></i>
+                                        <i
+                                            class="fa fa-caret-down"
+                                            aria-hidden="true"
+                                        ></i>
+
+                                        Assignments
+                                    </div>
+                                    <div
+                                        class="d-flex flex-row gap-3"
+                                        style="align-items: center"
+                                    >
+                                        <div
+                                            style="
+                                                border: 1px solid gray;
+                                                border-radius: 10px;
+                                                padding-top: 3px;
+                                                padding-bottom: 3px;
+                                                padding-left: 5px;
+                                                padding-right: 5px;
+                                                font-size: smaller;
+                                            "
+                                        >
+                                            40% of Total
+                                        </div>
+                                        <i
+                                            class="fa fa-plus"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <i
+                                            class="fa fa-ellipsis-v"
+                                            aria-hidden="true"
+                                            style="
+                                                color: black;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </div>
+                                </li>
+                                <div
+                                    style="
+                                        border-left: 5px solid green;
+                                        font-weight: bold;
+                                    "
+                                >
+                                    <li
+                                        class="list-group-item d-flex"
+                                        style="
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        "
+                                    >
+                                        <div
+                                            class="d-flex flex-row gap-2"
+                                            style="align-items: center"
+                                        >
+                                            <i
+                                                class="fa fa-ellipsis-v me-2"
+                                                aria-hidden="true"
+                                                style="color: gray"
+                                            ></i>
+                                            <i
+                                                class="fa fa-pencil-square-o"
+                                                aria-hidden="true"
+                                                style="color: green"
+                                            ></i>
+                                            <div
+                                                class="d-flex flex-column ms-3"
+                                            >
+                                                <a
+                                                    href="edit.html"
+                                                    style="
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    "
+                                                    >A1 - SETUP</a
+                                                >
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Week 0 - SETUP - Week
+                                                    starting on Monday September
+                                                    5th
+                                                </div>
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Due Sep 18, 2022 at 11:59PM
+                                                    | 100 Pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i
+                                            class="fa fa-check-circle fa-lg"
+                                            aria-hidden="true"
+                                            style="
+                                                color: green;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex"
+                                        style="
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        "
+                                    >
+                                        <div
+                                            class="d-flex flex-row gap-2"
+                                            style="align-items: center"
+                                        >
+                                            <i
+                                                class="fa fa-ellipsis-v me-2"
+                                                aria-hidden="true"
+                                                style="color: gray"
+                                            ></i>
+                                            <i
+                                                class="fa fa-pencil-square-o"
+                                                aria-hidden="true"
+                                                style="color: green"
+                                            ></i>
+                                            <div
+                                                class="d-flex flex-column ms-3"
+                                            >
+                                                <a
+                                                    href="edit.html"
+                                                    style="
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    "
+                                                    >A2 - HTML</a
+                                                >
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Week 0 - SETUP - Week
+                                                    starting on Monday September
+                                                    5th
+                                                </div>
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Due Sep 18, 2022 at 11:59PM
+                                                    | 100 Pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i
+                                            class="fa fa-check-circle fa-lg"
+                                            aria-hidden="true"
+                                            style="
+                                                color: green;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex"
+                                        style="
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        "
+                                    >
+                                        <div
+                                            class="d-flex flex-row gap-2"
+                                            style="align-items: center"
+                                        >
+                                            <i
+                                                class="fa fa-ellipsis-v me-2"
+                                                aria-hidden="true"
+                                                style="color: gray"
+                                            ></i>
+                                            <i
+                                                class="fa fa-pencil-square-o"
+                                                aria-hidden="true"
+                                                style="color: green"
+                                            ></i>
+                                            <div
+                                                class="d-flex flex-column ms-3"
+                                            >
+                                                <a
+                                                    href="edit.html"
+                                                    style="
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    "
+                                                    >A3 - CSS</a
+                                                >
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Week 0 - SETUP - Week
+                                                    starting on Monday September
+                                                    5th
+                                                </div>
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Due Sep 18, 2022 at 11:59PM
+                                                    | 100 Pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i
+                                            class="fa fa-check-circle fa-lg"
+                                            aria-hidden="true"
+                                            style="
+                                                color: green;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex"
+                                        style="
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        "
+                                    >
+                                        <div
+                                            class="d-flex flex-row gap-2"
+                                            style="align-items: center"
+                                        >
+                                            <i
+                                                class="fa fa-ellipsis-v me-2"
+                                                aria-hidden="true"
+                                                style="color: gray"
+                                            ></i>
+                                            <i
+                                                class="fa fa-pencil-square-o"
+                                                aria-hidden="true"
+                                                style="color: green"
+                                            ></i>
+                                            <div
+                                                class="d-flex flex-column ms-3"
+                                            >
+                                                <a
+                                                    href="edit.html"
+                                                    style="
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    "
+                                                    >A4 - BOOTSTRAP</a
+                                                >
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Week 0 - SETUP - Week
+                                                    starting on Monday September
+                                                    5th
+                                                </div>
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Due Sep 18, 2022 at 11:59PM
+                                                    | 100 Pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i
+                                            class="fa fa-check-circle fa-lg"
+                                            aria-hidden="true"
+                                            style="
+                                                color: green;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex"
+                                        style="
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        "
+                                    >
+                                        <div
+                                            class="d-flex flex-row gap-2"
+                                            style="align-items: center"
+                                        >
+                                            <i
+                                                class="fa fa-ellipsis-v me-2"
+                                                aria-hidden="true"
+                                                style="color: gray"
+                                            ></i>
+                                            <i
+                                                class="fa fa-pencil-square-o"
+                                                aria-hidden="true"
+                                                style="color: green"
+                                            ></i>
+                                            <div
+                                                class="d-flex flex-column ms-3"
+                                            >
+                                                <a
+                                                    href="edit.html"
+                                                    style="
+                                                        text-decoration: none;
+                                                        color: black;
+                                                    "
+                                                    >A5 - REACT</a
+                                                >
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Week 0 - SETUP - Week
+                                                    starting on Monday September
+                                                    5th
+                                                </div>
+                                                <div
+                                                    style="
+                                                        font-size: x-small;
+                                                        font-weight: normal;
+                                                    "
+                                                >
+                                                    Due Sep 18, 2022 at 11:59PM
+                                                    | 100 Pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i
+                                            class="fa fa-check-circle fa-lg"
+                                            aria-hidden="true"
+                                            style="
+                                                color: green;
+                                                line-height: normal;
+                                            "
+                                        ></i>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
