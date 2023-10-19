@@ -1,26 +1,33 @@
 import db from "../../Kanbas/Database";
-import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import {
+    Navigate,
+    Route,
+    Routes,
+    useLocation,
+    useParams,
+} from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import { FaBars } from "react-icons/fa";
+import { CanvasButton } from "./Modules/";
+import Grades from "./Grades";
 
 function Courses() {
     const { courseId } = useParams();
+    const { pathname } = useLocation();
     const course = db.courses.find((course) => course._id === courseId);
     return (
-        <div>
-            <h1>Course {course.name}</h1>
-            <CourseNavigation />
-            <div>
-                <div
-                    className="overflow-y-scroll position-fixed bottom-0 end-0"
-                    style={{
-                        left: "320px",
-                        top: "50px",
-                    }}
-                >
+        <div className="flex flex-col">
+            <div className="mb-2 ml-6 mt-4 mr-3 ">
+                <TopBar name={course.name} pathName={pathname} />
+                <hr className="mt-3" />
+            </div>
+            <div className="flex">
+                <CourseNavigation />
+                <div className="w-full mr-5 ml-5">
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home />} />
@@ -30,7 +37,7 @@ function Courses() {
                             path="Assignments/:assignmentId"
                             element={<AssignmentEditor />}
                         />
-                        <Route path="Grades" element={<h1>Grades</h1>} />
+                        <Route path="Grades" element={<Grades />} />
                     </Routes>
                 </div>
             </div>
@@ -38,3 +45,42 @@ function Courses() {
     );
 }
 export default Courses;
+
+function TopBar({ name, pathName }) {
+    return (
+        <div className="d-flex flex-row justify-between">
+            <div className="flex flex-row items-center">
+                <FaBars style={{ color: "#d41b2c" }} size={20} />
+                <div class="ml-4 text-lg">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a
+                                    href="#"
+                                    style={{
+                                        color: "#d41b2c",
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    {name}
+                                </a>
+                            </li>
+                            <li
+                                class="breadcrumb-item active"
+                                aria-current="page"
+                            >
+                                {pathName
+                                    .split(/[/]+/)
+                                    .pop()
+                                    .replace("%20", " ")}
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <CanvasButton optStyles={"px-3"}>Student View</CanvasButton>
+            </div>
+        </div>
+    );
+}
