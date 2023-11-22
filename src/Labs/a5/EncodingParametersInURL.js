@@ -1,17 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+const API_BASE = process.env.REACT_APP_API_BASE;
+const MODULES_URL = `${API_BASE}/api/modules`;
+const COURSES_URL = `${API_BASE}/api/courses`;
 function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
-    const response = await axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+    const response = await axios.get(`${API_BASE}/a5/add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
-    const response = await axios.get(
-      `http://localhost:4000/a5/subtract/${a}/${b}`
-    );
+    const response = await axios.get(`${API_BASE}/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
@@ -52,16 +53,10 @@ function EncodingParametersInURLs() {
         Fetch Substraction of {a} - {b}
       </button>
       <h3>Path Parameters</h3>
-      <a
-        href={`http://localhost:4000/a5/add/${a}/${b}`}
-        className="btn btn-primary"
-      >
+      <a href={`${API_BASE}/a5/add/${a}/${b}`} className="btn btn-primary">
         Add {a} + {b}
       </a>
-      <a
-        href={`http://localhost:4000/a5/subtract/${a}/${b}`}
-        className="btn btn-danger"
-      >
+      <a href={`${API_BASE}/a5/subtract/${a}/${b}`} className="btn btn-danger">
         Substract {a} - {b}
       </a>
     </div>
